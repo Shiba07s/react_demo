@@ -1,16 +1,19 @@
 import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
   const onRectangle1Click = useCallback(() => {
-    // Please sync "Login" to the project
-  }, []);
+    navigate("/");
+  }, [navigate]);
 
   const onComponent41Click = useCallback(() => {
-    // Please sync "Login" to the project
-  }, []);
+    navigate("/");
+  }, [navigate]);
 
   return (
-    <div className="relative bg-paleturquoise w-full h-[1080px] overflow-hidden text-left text-[64px] text-red font-inter">
+    <div className="relative bg-paleturquoise w-full h-[1080px] overflow-hidden text-left text-45xl text-red-100 font-inter">
       <div className="absolute top-[262px] left-[0px] bg-royalblue-100 w-[1920px] h-[103px]" />
       <img
         className="absolute top-[-171px] left-[1881px] rounded-lg w-[301px] h-[106px] cursor-pointer"
@@ -37,13 +40,13 @@ const LandingPage = () => {
         alt=""
         src="/logo5--copyremovebgpreview-1@2x.png"
       />
-      <b className="absolute top-[91px] left-[470px] text-[48px]">
+      <b className="absolute top-[91px] left-[470px] text-29xl">
         Government Of Andhra Pradesh
       </b>
       <select className="absolute top-[180px] left-[1322px] w-64 h-[136px]" />
       <div className="absolute top-[279px] left-[420px] w-[100px] h-[100px] overflow-hidden" />
       <button
-        className="cursor-pointer [border:none] p-0 bg-royalblue-200 absolute h-[7.69%] w-[11.82%] top-[15.56%] right-[2.03%] bottom-[76.76%] left-[86.15%] rounded-[20px]"
+        className="cursor-pointer [border:none] p-0 bg-royalblue-200 absolute h-[7.69%] w-[11.82%] top-[15.56%] right-[2.03%] bottom-[76.76%] left-[86.15%] rounded-xl"
         onClick={onComponent41Click}
       >
         <b className="absolute top-[14.46%] left-[21.15%] text-21xl font-inter text-white text-left">
